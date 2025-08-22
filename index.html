@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Studio | Веб-дизайн и креатив</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Кастомный курсор -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="logo">CREATIVE</div>
+        <nav class="nav-links">
+            <a href="#home" class="nav-link">Главная</a>
+            <a href="#portfolio" class="nav-link">Портфолио</a>
+            <a href="#services" class="nav-link">Услуги</a>
+            <a href="#contact" class="nav-link">Контакты</a>
+        </nav>
+    </header>
+
+    <!-- Герой секция -->
+    <section id="home" class="hero">
+        <div class="floating-elements">
+            <div class="floating-element element-1"></div>
+            <div class="floating-element element-2"></div>
+            <div class="floating-element element-3"></div>
+        </div>
+        <h1>Создаем цифровые<br>шедевры будущего</h1>
+        <p>Мы команда креативных дизайнеров и разработчиков, создающих уникальные цифровые решения, которые выделяют вас среди конкурентов.</p>
+        <button class="cta-button">Начать проект</button>
+    </section>
+
+    <!-- Портфолио -->
+    <section id="portfolio" class="section">
+        <h2 class="section-title">Наши работы</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://placehold.co/600x400/6366f1/ffffff?text=E-commerce+Platform" alt="E-commerce Platform" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3 class="portfolio-title">E-commerce Platform</h3>
+                    <p class="portfolio-desc">Современная платформа электронной коммерции с уникальным дизайном</p>
+                    <button class="cta-button">Подробнее</button>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=Mobile+App" alt="Mobile App" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3 class="portfolio-title">Mobile App</h3>
+                    <p class="portfolio-desc">Инновационное мобильное приложение для фитнес-индустрии</p>
+                    <button class="cta-button">Подробнее</button>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://placehold.co/600x400/ec4899/ffffff?text=Brand+Identity" alt="Brand Identity" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3 class="portfolio-title">Brand Identity</h3>
+                    <p class="portfolio-desc">Полная редизайн бренда технологической компании</p>
+                    <button class="cta-button">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Слайдер с кейсами -->
+    <section class="section">
+        <h2 class="section-title">Кейсы</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://placehold.co/1200x600/6366f1/ffffff?text=Case+Study+1" alt="Case Study 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://placehold.co/1200x600/8b5cf6/ffffff?text=Case+Study+2" alt="Case Study 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://placehold.co/1200x600/ec4899/ffffff?text=Case+Study+3" alt="Case Study 3">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="section">
+        <h2 class="section-title">Наши услуги</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3 class="service-title">Веб-дизайн</h3>
+                <p>Создаем уникальные и запоминающиеся веб-дизайны, которые превращают посетителей в клиентов.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💻</div>
+                <h3 class="service-title">Разработка</h3>
+                <p>Разрабатываем современные и функциональные веб-приложения с использованием последних технологий.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📱</div>
+                <h3 class="service-title">Мобильные приложения</h3>
+                <p>Создаем интуитивные и красивые мобильные приложения для iOS и Android.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Свяжитесь с нами</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Ваше имя" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Ваш email" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Расскажите о вашем проекте" class="form-input" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">Отправить сообщение</button>
+        </form>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#" class="social-link">📘</a>
+            <a href="#" class="social-link">🐦</a>
+            <a href="#" class="social-link">📷</a>
+            <a href="#" class="social-link">💼</a>
+        </div>
+        <p>&copy; 2024 Creative Studio. Все права защищены.</p>
+    </footer>
+
+    <script src="js/cursor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
